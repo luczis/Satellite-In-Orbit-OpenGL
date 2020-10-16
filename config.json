@@ -1,0 +1,211 @@
+{
+	"OpenGL" : 
+	{
+		"Version" : 
+		{
+			"Major" : 4,
+			"Minor" : 6
+		}
+	},
+	"Window" : 
+	{
+		"MSAA" : 8,
+		"Size" : 
+		{
+			"Height" : 1000,
+			"Width" : 1000
+		},
+		"Title" : "Bergimus",
+		//Three possible types: Fullscreen, Borderless and Windowed
+		"Type" : "Windowed"
+	},
+	"View" :
+	{
+		"FOV" : 60,
+		"Distance" : 100000000,
+		"Camera" :
+		{
+			"Min Distance" : 1.0,
+			"Max Distance" : 50.0,
+			"Max Pitch Radians" : 1.5,
+			"Rotation Speed" : 0.05,
+			"Zoom Speed" : 0.1
+		}
+	},
+	"Simulation" :
+	{
+		"Day Hours" : 24.0,
+		"Time Multiplier" : 10.0,
+		"Satellite" :
+		{
+			"Orbital Speed[Km/h]" : 28000.0
+		}
+	},
+	"Objects" :
+	{
+		"0" :
+		{
+			"Name" : "Skybox",
+			"Shader" :
+			{
+				"Vertex" : "resources/shader/skybox_shader.vert",
+				"Fragment" : "resources/shader/skybox_shader.frag"
+			},
+			"Obj File" : "resources/model/skybox.obj",
+			"Texture" : "resources/textures/skybox.jpg",
+			"Normal_Map" : "",
+			"Position" :
+			{
+				"X" : 0,
+				"Y" : 0,
+				"Z" : 0.0
+			},
+			"Scale" :
+			{
+				"X" : 100000.0,
+				"Y" : 100000.0,
+				"Z" : 100000.0
+			},
+			"Rotate" :
+			{
+				"X" : 1.0,
+				"Y" : 0.0,
+				"Z" : 0.0,
+				"Angle" : 0.0
+			}
+		},
+		"1" :
+		{
+			"Name" : "Earth",
+			"Shader" :
+			{
+				"Vertex" : "resources/shader/t_shader.vert",
+				"Fragment" : "resources/shader/t_shader.frag"
+			},
+			"Obj File" : "resources/model/earth.obj",
+			"Texture" : "resources/textures/earth.jpg",
+			"Normal_Map" : "",
+			"Position" :
+			{
+				"X" : 0,
+				"Y" : 0,
+				"Z" : -6771
+			},
+			"Scale" :
+			{
+				"X" : 6371,
+				"Y" : 6371,
+				"Z" : 6371
+			},
+			"Rotate" :
+			{
+				"X" : 1.0,
+				"Y" : 1.0,
+				"Z" : 1.0,
+				"Angle" : 45.0
+			}
+		},
+		"2" :
+		{
+			"Name" : "Earth Clouds",
+			"Shader" :
+			{
+				"Vertex" : "resources/shader/t_shader.vert",
+				"Fragment" : "resources/shader/t_shader.frag"
+			},
+			"Obj File" : "resources/model/earth_clouds.obj",
+			"Texture" : "resources/textures/earth_clouds2.png",
+			"Normal_Map" : "",
+			"Position" :
+			{
+				"X" : 0,
+				"Y" : 0,
+				"Z" : -6771
+			},
+			"Scale" :
+			{
+				"X" : 6371,
+				"Y" : 6371,
+				"Z" : 6371
+			},
+			"Rotate" :
+			{
+				"X" : 1.0,
+				"Y" : 1.0,
+				"Z" : 1.0,
+				"Angle" : 45.0
+			}
+		},
+		"3" :
+		{
+			"Name" : "Satellite",
+			"Shader" :
+			{
+				"Vertex" : "resources/shader/t_shader.vert",
+				"Fragment" : "resources/shader/t_shader.frag"
+			},
+			"Obj File" : "resources/model/cube.obj",
+			"Texture" : "resources/textures/cubetext.png",
+			"Normal_Map" : "",
+			"Position" :
+			{
+				"X" : 0,
+				"Y" : 0,
+				"Z" : 0.0
+			},
+			"Scale" :
+			{
+				"X" : 1.0,
+				"Y" : 1.0,
+				"Z" : 1.0
+			},
+			"Rotate" :
+			{
+				"X" : 1.0,
+				"Y" : 1.0,
+				"Z" : 1.0,
+				"Angle" : 0.0
+			}
+		}
+	},
+	"Lights" :
+	{
+		"0" :
+		{
+			"Name" : "Sun",
+			"Shader" :
+			{
+				"Vertex" : "resources/shader/l_shader.vert",
+				"Fragment" : "resources/shader/l_shader.frag"
+			},
+			"Obj File" : "resources/model/ball.obj",
+			"Texture" : "",
+			"Normal_Map" : "",
+			"Position" :
+			{
+				"X" : 0,
+				"Y" : 0,
+				"Z" : 60000.0
+			},
+			"Scale" :
+			{
+				"X" : 1000.0,
+				"Y" : 1000.0,
+				"Z" : 1000.0
+			},
+			"Rotate" :
+			{
+				"X" : 1.0,
+				"Y" : 1.0,
+				"Z" : 0.0,
+				"Angle" : 45.0
+			},
+			"Color" :
+			{
+				"R" : 0.9,
+				"G" : 0.9,
+				"B" : 0.7
+			}
+		}
+	}
+}
