@@ -33,9 +33,5 @@ Run via command line, and specify the config.json file utilized, example:
 
 Sample video showing the software running with default settings:
 
-<video>
-    <source src="./md/output.mov" type="video/mp4">
-</video>
-
-![Video of a simulation of a satellite and earth](./md/output.mov)
+![Video of a simulation of a satellite and earth](./md/output.gif)
 
