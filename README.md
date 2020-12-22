@@ -8,7 +8,7 @@ With keys inputs for movement, and a .json configuration file for tweaking the s
 
 # Results
 
-Sample video showing the software running with default settings:
+Sample video showing the software running with default models:
 
 ![Video of a simulation of a satellite and earth](./md/output.gif)
 
