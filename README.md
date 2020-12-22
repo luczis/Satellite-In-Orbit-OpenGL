@@ -1,72 +1,37 @@
-OpenGL CMake Skeleton [![Build Status](https://travis-ci.org/ArthurSonzogni/OpenGL_CMake_Skeleton.svg?branch=master)](https://travis-ci.org/ArthurSonzogni/OpenGL_CMake_Skeleton)
-=======================
+# Satellite In Orbit OpenGL
 
-A ready to use C++11 CMake OpenGL skeleton using **GLFW**, **Glew** and **glm**. (use git submodules)
+A software with proper scale of a satellite orbiting earth, utilizing OpenGL for rendering the models, with shadows and reflection. It also provides a proper skeletal structure for incrementating the amout of models and customizing them via a .json file.
 
-It compiles on:
- * **WebAssembly**  (on branch webassembly. See instruction below)
- * Linux
- * Windows
- * Mac
+Developed from scratch, using OpenGL, GLFW and Glew.
 
-It can compile for the Web with WebAssembly thanks to emscripten, as well as on
-Linux, Windows and Mac.
+With keys inputs for movement, and a .json configuration file for tweaking the simulation and window parameters.
 
-Shader class and example Application are included.
+# How to build
 
-![output result](output.gif)
+First, this project utilizes git submodules, so please clone using the --recursive flag.
 
-I am open to any comments and contributions.
+'''
+git clone --recursive https://github.com/luczis/Bergimus
+'''
 
-Clone (With submodules):
-========================
+Standard building process:
 
-```
-git clone --recursive git@github.com:ArthurSonzogni/OpenGL_CMake_Skeleton.git
-```
-
-Alternatively, if you don't used the --recursive option, you can type:
-```bash
-git submodule init
-git submodule update
-```
-
-usage (WebAssembly) : 
----------------------
-Switch to the webassembly branch
-```
-git checkout webassembly
-```
-
-Install emscripten, then
-```bash
-mkdir build_emscripten
-cd build_emscripten
-CC=emcc CXX=em++ cmake ..
-make
-python -m SimpleHTTPServer 8000
-```
-
-Now, visit [http://localhost:8000](http://localhost:8000)
-
-usage (Linux) : 
----------------
-Some standard library to install:
-```bash
-sudo apt-get install cmake libxrandr-dev libxinerama-dev libxcursor-dev libxi-dev
-
-Open the directory into a terminal
-```bash
+'''
 mkdir build
 cd build
 cmake ..
-./main
-```
+make
+'''
 
-usage (Windows) :
------------------
-For instance :
-* cmake-gui .
-* Configure (Choose for example Visual Studio generator)
-* Generate
-Launch the generated project in your favorite IDE and run it.
+Run via command line, and specify the config.json file utilized, example:
+
+'''
+./Bergimus config.json
+'''
+
+# Results
+
+Sample video showing the software running with default settings:
+
+![Video of a simulation of a satellite and earth](md/output.mov)
+

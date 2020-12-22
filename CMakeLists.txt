@@ -3,7 +3,7 @@ project (Bergimus)
 
 # Only supporting Linux right now
 if(NOT UNIX)
-	message(FATAL_ERROR "Not supported for your Operational System")
+	message(WARNING "Not properly tested for your Operational System")
 endif()
 
 # Manage OpenGL policy and set fallback
@@ -18,15 +18,6 @@ find_package(Freetype REQUIRED)
 
 # The main executable
 add_executable(Bergimus
-#  src/Application.cpp
-#  src/Application.cpp
-#  src/MyApplication.cpp
-#  src/MyApplication.cpp
-#  src/glError.hpp
-#  src/glError.cpp
-#  src/Shader.hpp
-#  src/Shader.cpp
-#  src/objloader.cpp
   src/lights.cpp
   src/objects.cpp
   src/bergimus.cpp

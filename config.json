@@ -144,8 +144,8 @@
 				"Vertex" : "resources/shader/t_shader.vert",
 				"Fragment" : "resources/shader/t_shader.frag"
 			},
-			"Obj File" : "resources/model/cube.obj",
-			"Texture" : "resources/textures/cubetext.png",
+			"Obj File" : "resources/model/satellite.obj",
+			"Texture" : "resources/textures/satellite.jpg",
 			"Normal_Map" : "",
 			"Position" :
 			{
